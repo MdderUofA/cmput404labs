@@ -5,9 +5,9 @@ from utils import *
 def main():
     try:
         #define address info, payload, and buffer size
-        host = '127.0.0.1'
-        port = 8001
-        payload = f'My response I expect to get back.'
+        host = 'www.google.com'
+        port = 80
+        payload = f'GET / HTTP/1.0\r\nHost: {host}\r\n\r\n'
         buffer_size = 4096
 
         #make the socket, get the ip, and connect
